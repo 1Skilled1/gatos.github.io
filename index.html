@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Personas</title>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <!-- extra fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet"/>
+    <!-- styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+      <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+      <div class="back-row-toggle splat-toggle">
+        <div class="rain front-row"></div>
+        <div class="rain back-row"></div>
+      </div>
+    <section class="questions"> 
+        <!--El elemento de HTML section ( <section> ) representa una sección genérica de un documento. 
+        Sirve para determinar qué contenido corresponde a qué parte de un esquema. Piensa en el esquema como en el índice de contenido de un libro; 
+        un tema común y subsecciones relacionadas. Es, por lo tanto, una etiqueta semántica-->
+        <br>
+        <audio style="display: none;" id="audio" controls>
+            <source type="audio/wav" src="gatito.mp3">
+        </audio>
+        <br>
+        <img onclick="var audio = document.getElementById('audio'); audio.play();" id="gato1" src="https://i.pinimg.com/originals/7d/cc/16/7dcc165beeef87e4b3f31f756ca61ce7.gif" alt="">
+        <img onclick="var audio = document.getElementById('audio'); audio.play();" id="gato2" src="https://i.pinimg.com/originals/6f/8f/9e/6f8f9ec63dd6dacf636316029c9a7d2b.gif" alt="">
+        <img onclick="var audio = document.getElementById('audio'); audio.play();" id="gato3" src="https://i.pinimg.com/originals/62/db/78/62db782fa9d80b351e4f8a4d3db48c00.gif" alt="">
+        
+        <div class="title">
+          <h2>Luzmila Villegas</h2>
+        </div>
+        <div class="section-center">
+    <article class="question">
+        <!--El Elemento article de HTML (<article>) representa una composición auto-contenida en un documento, página, 
+            una aplicación o en el sitio, que se destina a distribuir de forma independiente o reutilizable, por ejemplo, en la indicación-->
+        <div class="question-title">
+            <p>¿Como cuidar un gato?</p>
+                <button type="button" class="question-btn">
+                    <span class="plus-icon">
+                    <!--Es un contenedor en línea. Sirve para aplicar estilo al texto o agrupar elementos en línea. 
+                    Sus etiquetas son: <span> y </span> (ambas obligatorias). Está definido como: Elemento especial, y por lo tanto en línea-->
+                        <i class="far fa-plus-square"></i>
+                        <!--La etiqueta <i>, o elemento de texto idiomático, es un espacio de texto que representa un 
+                        cambio en el estado de ánimo o la calidad del texto. Este texto se muestra en cursiva. En la pagina es el + dentro del cuadro-->
+                    </span>
+                    <span class="minus-icon">
+                        <i class="far fa-minus-square"></i>
+                    </span>
+                </button>
+        </div>
+        <div class="question-text">
+            <p>Juega con tu gato<br>Jugar con tu gato le aportará muchas ventajas:
+                <ol>
+                    <li>Mantiene al felino activo, previniendo el sobrepeso y la obesidad</li>
+                    <li>Mejora su estado de ánimo y estrés</li>
+                    <li>Le permite desarrollar su instinto depredador</li>
+                    <li>Ayuda a establecer un fuerte lazo entre el gato y el cuidador</li>
+                </ol>
+            </p>
+        </div>
+    </article>
+    <article class="question">
+        <div class="question-title">
+            <p>La alimentacion, la clave para una buena salud</p>
+                <button type="button" class="question-btn">
+                    <span class="plus-icon">
+                        <i class="far fa-plus-square"></i>
+                    </span>
+                    <span class="minus-icon">
+                        <i class="far fa-minus-square"></i>
+                    </span>
+                </button>
+        </div>
+        <div class="question-text">
+            <p>
+                <ol>
+                    <li>Los gatos, a diferencia de los perros, son carnívoros estrictos, por lo que requieren una elavada cantidad de proteínas en su dieta.</li>
+                    <li>Estas deben estar presentes al menos en un 25% del total del alimento, siendo ideal en torno al 40%. Otros nutrientes que debe contener el alimento son los hidratos de carbono, las grasas, las vitaminas y los minerales</li>
+                </ol>
+            </p>
+        </div>
+    </article>
+    <article class="question">
+        <div class="question-title">
+            <p>Vacunación y desparasitación para prevenir enfermedades</p>
+                <button type="button" class="question-btn">
+                    <span class="plus-icon">
+                        <i class="far fa-plus-square"></i>
+                    </span>
+                    <span class="minus-icon">
+                        <i class="far fa-minus-square"></i>
+                    </span>
+                </button>
+        </div>
+        <div class="question-text">
+            <p>Los gatos pueden verse afectados por diversas enfermedades infecciosas, siendo la vacunación la mejor manera de controlarlas La pauta recomendada de vacunación en los gatos es la siguiente:
+                <ol>
+                    <li>A las 6-8 semanas se aplica la trivalente (Herpesvirus, Calicivirus y Panleucopenia), con revacunación cada cuatro semanas hasta la semana 16</li>
+                    <li>En la semana 8 se vacuna de Leucemia felina, revacunando al mes, al año y luego cada 2-3 años si están en riesgo, si no lo están no vacunar.</li>
+                </ol>
+            </p>
+        </div>
+    </article>
+    <article class="question">
+        <div class="question-title">
+            <p>Hábitos de higiene básica</p>
+                <button type="button" class="question-btn">
+                    <span class="plus-icon">
+                        <i class="far fa-plus-square"></i>
+                    </span>
+                    <span class="minus-icon">
+                        <i class="far fa-minus-square"></i>
+                    </span>
+                </button>
+        </div>
+        <div class="question-text">
+            <p>
+                <ol>
+                    <li>Los gatos requieren que se les cepille e incluso se les lave el pelaje con cierta frecuencia.</li>
+                    <li>Los dientes se deben limpiar y revisar para buscar y prevenir el sarro y patologías como la gingivitis o la enfermedad periodontal</li>
+                    <li>La limpieza y revisión de los oídos es clave. En los gatos pueden aparecer, por ejemplo, otitis o parasitaciones por el ácaro de oídos Otodectescynotis, siendo molesto para el felino</li>
+                </ol>
+            </p>
+        </div>
+    </article>
+    <p style="color: white;">Toda la informacion se tomo de esta pagina:</p>
+    <a style="color: white;" href="https://www.elconfidencialdigital.com/articulo/tendencias/como-cuidar-educar-gato-claves-bienestar/20210122130259207218.html">https://www.elconfidencialdigital.com/articulo/tendencias/como-cuidar-educar-gato-claves-bienestar/20210122130259207218.html</a>
+    </section>
+<script src="app.js"></script>
+</body>
+</html>
